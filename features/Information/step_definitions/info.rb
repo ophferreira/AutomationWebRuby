@@ -27,7 +27,12 @@ Entao("clicar em Secure Payment") do
   find(:xpath, '/html/body/div/div[2]/div/div[3]/div[1]/section/div/ul/li[5]/a').click
 end
 
-Entao("clicar em Our Stores") do
+Quando("clicar em Our Stores") do
   page.execute_script('window.scrollBy(0,1000)') #Fazer ScrollDow
   find(:xpath, '/html/body/div/div[2]/div/div[3]/div[1]/section/div/ul/li[6]/a').click
+end
+
+Entao("clicar em OK") do
+  page.execute_script('window.scrollBy(0,400)') #Fazer ScrollDow
+  find(:xpath, '/html/body/div/div[2]/div/div[3]/div/div[1]/div[2]/table/tr/td[2]/button').click
 end

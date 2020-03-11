@@ -45,10 +45,12 @@ Cenario: Validar Secure Payment
   Dado que estou na Price drop
   Quando realizar scrool ate Information
   Entao clicar em Secure Payment
+
 #Cenario 12
 
 @Info6
 Cenario: Validar Our Stores
   Dado que estou na Price drop
   Quando realizar scrool ate Information
-  Entao clicar em Our Stores
+    E clicar em Our Stores
+  Entao clicar em OK
